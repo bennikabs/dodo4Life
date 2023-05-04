@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantains</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        text-align: center;
+        color: brown;
+
+        font-family: helvetica, Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        padding: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 100%;
+        padding: 1px;
+      }
+      .learnMore {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 11px;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background-color: white;
+      }
+      .wikilink {
+        font-size: 20px;
+      }
+      p {
+        margin: 0 auto;
+        line-height: 0.3in;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: burlywood;
+        color: white;
+        font-size: 18px;
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: saddlebrown;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Plantains</h1>
+      <h2>You can never go wrong with Plantains</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/648/original/Dodo-Recipe-Maureen-Celestine-hedenote-01-0ddd82ccf8a34f49bd5ab15287ed98c3-2.JPG?1660515725"
+        alt="Plantain"
+      />
+
+      <p>
+        <strong>Plaintain</strong> is a starchy fruit also called cooking
+        bananas. Deep-fried Plantains are called <em>Dodo</em> in Nigeria.
+        Griiled, fried, cooked, baked plantain are great for an apetizer, main
+        meal, or a dessert. Fried, grilled, boiled, dehydrated and pulverized,
+        sweet or savory, plantains are a staple of Nigerian cuisine. Dodo, as it
+        is called in Yoruba, refers to fried sweet plantains. For the plantains
+        to caramelize properly, use ripe plantains (the skin should be deep
+        yellow and speckled with large black dots). If you can find only green
+        plantains, you can seal them in a paper bag and let them ripen for 2 to
+        3 days. Cooking the plantains in hot oil brings out their caramelized
+        sweetness, and a quick toss with pickled onions adds an acidic bite.
+        Enjoy these sweet, tangy morsels on their own, or serve this dish
+        alongside jollof, plain steamed rice, frejon or plain cooked beans. Dodo
+        To The World😋!
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Cooking_banana"
+          target="_blank"
+          class="learnMore"
+        >
+          <strong class="wikilink">🔎 Read more on wikipedia</strong>
+        </a>
+      </p>
+      <button>👉🏾ORDER YOUR PLANTAIN</button>
+      <p class="footer">This Page was built by Benny Kabs</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let country = prompt("What is your country of residence?");
+        if (
+          country === "Germany" ||
+          country === "Deutschland" ||
+          country === "DE" ||
+          country === "De" ||
+          country === "de" ||
+          country === "germany"
+        ) {
+          alert(
+            "Thank you, " +
+              name +
+              "! We'll be in touch by email, meanwhile check out the nutritional benefits of dodo through the wikipedia link!😃"
+          );
+        } else {
+          alert("Sorry " + name + ", We do not ship to " + country + "☹️");
+        }
+      }
+      let orderButton = document.querySelector("button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
